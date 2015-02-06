@@ -17,7 +17,9 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class NameServlet
  */
-@WebServlet("/NameServlet")
+//!!! not http://localhost:8080/GlassfishTest/rest/nameservlet
+//http://localhost:8080/GlassfishTest/nameservlet
+@WebServlet(name="NameServlet",urlPatterns={"/nameservlet"})
 public class NameServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
