@@ -14,6 +14,7 @@ public class RestApplication extends Application{
 	public Set<Class<?>> getClasses() {
 		Set<Class<?>> classes = new HashSet<Class<?>>();
 		classes.add(SimpleService.class);
+		classes.add(NameServlet.class);
 		return classes;
 	}
 //

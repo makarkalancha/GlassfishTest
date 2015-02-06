@@ -18,7 +18,7 @@ public class SimpleService {
 	}
 	
 	//http://localhost:8080/GlassfishTest/rest/sample/sayHello/bitch
-	@Path("sayHello/{name}")
+	@Path("/sayHello/{name}")
 	@GET
 	public String doSayHello(@PathParam("name") String name){
 		return "Hello there, "+name;
